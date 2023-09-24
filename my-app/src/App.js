@@ -4,6 +4,8 @@ import HomePage from './Pages/HomePage';
 import Quizz from './Pages/Quizz';
 import Todo from './Pages/Todo';
 import Countdown from './Pages/Countdown';
+import TikTakToe from './tik-tak-toe/TikTakToe';
+
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
 <Route path='/quizz' element={<Quizz/>}/>
 <Route path='/todo' element={<Todo/>}/>
 <Route path='/countdown' element={<Countdown/>}/>
-
+<Route path='/tiktaktoe' element={<TikTakToe/>}/>
 
   </Routes>
   

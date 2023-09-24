@@ -384,7 +384,7 @@ section p:first-child, .timer div:last-child span {
 
 .home {
   height: 100vh;
-  background-color: rgb(157, 205, 246);
+  background-color: #111;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,7 +398,8 @@ section p:first-child, .timer div:last-child span {
   width: 50%;
   font-size: 25px;
   font-weight: bold;
-  box-shadow: 0 0 10px rgb(57, 57, 57);
+  box-shadow: 0 0 10px black;
+  color: white;
   border-radius: 15px;
   border: none;
   cursor: pointer;
@@ -411,22 +412,287 @@ section p:first-child, .timer div:last-child span {
 }
 
 .home h1 {
-  color: #5A0834;
+  color: white;
   text-shadow: 0 0 5px black;
-  font-size: 45px;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0 0 5px purple, 0 0 3px blue, 0 0 3px rgb(155, 40, 155), 0 0 5px rgb(1, 1, 120);
 }
 
 .todo-btn {
-  background-color: #5A0834;
+  background-image: linear-gradient(to right, rgb(6, 6, 91), rgb(80, 8, 101));
 
 }
 
 .quiz-btn {
-  background-color: #f089ba;
+  background-image: linear-gradient(to right, rgb(49, 49, 206), rgb(147, 10, 189));
 
 }
 
 .countdown-btn {
-  background-color: #9D0B51;
+  background-image: linear-gradient(to right, rgb(19, 19, 158), rgb(96, 13, 121));
+}
 
+.tik-btn {
+  background-image: linear-gradient(to right, rgb(108, 108, 220), rgb(161, 28, 202));
+}
+
+.anim-btn {
+  background-image: linear-gradient(to right, rgb(123, 123, 224), rgb(187, 90, 216));
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  place-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10%;
+  box-shadow: 0px 0px 8px #888888;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 5em;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  line-height: 5rem;
+  margin: 0.5rem;
+}
+
+.x {
+  background-image: linear-gradient(to right, rgb(72, 0, 72), rgb(229, 2, 229));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+
+
+}
+
+.o {
+  background-image: linear-gradient(to right, rgb(182, 182, 246), rgb(5, 5, 203));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+.box:hover {
+  box-shadow: 0px 0px 15px #888888;
+}
+
+.reset-btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, blue, purple);
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto;
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reset-btn:hover {
+  opacity: 0.7;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20rem;
+  font-size: 1.5rem;
+  background-color: white;
+  margin: 3rem auto;
+  box-shadow: 0px 0px 8px #888888;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.score {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.x-score {
+  background-image: linear-gradient(to right, rgb(72, 0, 72), rgb(229, 2, 229));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 5px solid rgb(212, 66, 115);
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.o-score {
+  background-image: linear-gradient(to right, rgb(182, 182, 246), rgb(5, 5, 203));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 5px solid rgb(63, 63, 252);
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.inactive {
+  border-bottom: 5px solid transparent;
+}
+
+
+.TikTakToe {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #111;
+}
+
+.TikTakToe h2 {
+  font-size: 50px;
+  background-image: linear-gradient(to right, blue, purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+
+}
+
+.TikTakToe p {
+  font-size: 30px;
+  color: whitesmoke;
+  text-shadow: 0 0 3px white;
+}
+
+.extra-wrp {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle, #000000, #0000FF, #800080);
+}
+
+.extra {
+  margin-top: 2rem;
+  height: 70vh;
+  box-shadow: 0 0 10px black;
+  position: relative;
+  background: transparent;
+}
+
+
+.extra figure {
+  height: 50vh;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+}
+
+.extra figure img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.thought {
+  box-shadow: 0 0 10px black;
+  width: 70%;
+  border-radius: 50%;
+  height: 420px;
+  background: transparent;
+  margin: 50px auto;
+  position: relative;
+  left: -10%;
+  top: 0;
+}
+
+
+.round-div {
+  overflow: hidden !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+
+
+
+.round-div h2 {
+  font-size: 45px;
+  position: absolute;
+  left: 26%;
+  font-weight: bold;
+  top: 8%;
+  z-index: 2;
+  color: white;
+
+}
+
+.round-div svg {
+
+  position: absolute;
+  left: -20%;
+  top: 8%;
+}
+
+#rotating-planet {
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+#clip {
+  -webkit-clip-path: url(#planet);
+  clip-path: url(#planet);
+}
+
+#texture {
+  -webkit-animation: rotate 25s linear infinite;
+  animation: rotate 25s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
